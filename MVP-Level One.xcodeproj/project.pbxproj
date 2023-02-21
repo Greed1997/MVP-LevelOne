@@ -12,13 +12,17 @@
 		847EBE6D29A3E4010061FAC5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847EBE6C29A3E4010061FAC5 /* MainViewController.swift */; };
 		847EBE7229A3E4030061FAC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847EBE7129A3E4030061FAC5 /* Assets.xcassets */; };
 		847EBE7529A3E4030061FAC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847EBE7329A3E4030061FAC5 /* LaunchScreen.storyboard */; };
-		847EBE9929A3E41F0061FAC5 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847EBE9829A3E41F0061FAC5 /* Person.swift */; };
+		847EBE9929A3E41F0061FAC5 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847EBE9829A3E41F0061FAC5 /* Comment.swift */; };
 		847EBE9B29A3E44B0061FAC5 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847EBE9A29A3E44B0061FAC5 /* MainPresenter.swift */; };
 		847EBE9D29A3E71E0061FAC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847EBE9C29A3E71E0061FAC5 /* Main.storyboard */; };
 		847EBEA529A3E78A0061FAC5 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847EBEA429A3E78A0061FAC5 /* MainViewController.xib */; };
 		847EBEA729A3E82A0061FAC5 /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847EBEA629A3E82A0061FAC5 /* ModuleBuilder.swift */; };
 		847EBECF29A4CDBA0061FAC5 /* MVP_Level_OneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847EBECE29A4CDBA0061FAC5 /* MVP_Level_OneTests.swift */; };
 		847EBED529A4CDCE0061FAC5 /* ViewPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847EBEAE29A4CD110061FAC5 /* ViewPresenterTest.swift */; };
+		847EBED829A4E6FE0061FAC5 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847EBED729A4E6FD0061FAC5 /* NetworkService.swift */; };
+		847EBEDB29A4EEAE0061FAC5 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847EBEDA29A4EEAE0061FAC5 /* DetailPresenter.swift */; };
+		847EBEE029A4F5450061FAC5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847EBEDE29A4F5450061FAC5 /* DetailViewController.swift */; };
+		847EBEE429A4F61D0061FAC5 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847EBEE329A4F61D0061FAC5 /* DetailView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +43,7 @@
 		847EBE7129A3E4030061FAC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		847EBE7429A3E4030061FAC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		847EBE7629A3E4030061FAC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		847EBE9829A3E41F0061FAC5 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		847EBE9829A3E41F0061FAC5 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		847EBE9A29A3E44B0061FAC5 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		847EBE9C29A3E71E0061FAC5 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		847EBEA429A3E78A0061FAC5 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
@@ -47,6 +51,10 @@
 		847EBEAE29A4CD110061FAC5 /* ViewPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPresenterTest.swift; sourceTree = "<group>"; };
 		847EBECC29A4CDBA0061FAC5 /* MVP_Level_OneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVP_Level_OneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		847EBECE29A4CDBA0061FAC5 /* MVP_Level_OneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVP_Level_OneTests.swift; sourceTree = "<group>"; };
+		847EBED729A4E6FD0061FAC5 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		847EBEDA29A4EEAE0061FAC5 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		847EBEDE29A4F5450061FAC5 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		847EBEE329A4F61D0061FAC5 /* DetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +99,9 @@
 				847EBE6829A3E4010061FAC5 /* AppDelegate.swift */,
 				847EBE6A29A3E4010061FAC5 /* SceneDelegate.swift */,
 				847EBEA629A3E82A0061FAC5 /* ModuleBuilder.swift */,
+				847EBEDD29A4F5010061FAC5 /* DetailModule */,
 				847EBE9E29A3E7340061FAC5 /* MainModule */,
+				847EBED929A4E71C0061FAC5 /* ServiceLayer */,
 				847EBE9C29A3E71E0061FAC5 /* Main.storyboard */,
 				847EBE7129A3E4030061FAC5 /* Assets.xcassets */,
 				847EBE7329A3E4030061FAC5 /* LaunchScreen.storyboard */,
@@ -122,7 +132,7 @@
 		847EBEA029A3E74D0061FAC5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				847EBE9829A3E41F0061FAC5 /* Person.swift */,
+				847EBE9829A3E41F0061FAC5 /* Comment.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -150,6 +160,41 @@
 				847EBEAE29A4CD110061FAC5 /* ViewPresenterTest.swift */,
 			);
 			path = TestMainModule;
+			sourceTree = "<group>";
+		};
+		847EBED929A4E71C0061FAC5 /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				847EBED729A4E6FD0061FAC5 /* NetworkService.swift */,
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		847EBEDC29A4F4F00061FAC5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				847EBEDA29A4EEAE0061FAC5 /* DetailPresenter.swift */,
+			);
+			name = Presenter;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		847EBEDD29A4F5010061FAC5 /* DetailModule */ = {
+			isa = PBXGroup;
+			children = (
+				847EBEE229A4F5590061FAC5 /* View */,
+				847EBEDC29A4F4F00061FAC5 /* Presenter */,
+			);
+			path = DetailModule;
+			sourceTree = "<group>";
+		};
+		847EBEE229A4F5590061FAC5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				847EBEDE29A4F5450061FAC5 /* DetailViewController.swift */,
+				847EBEE329A4F61D0061FAC5 /* DetailView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +282,7 @@
 				847EBE7529A3E4030061FAC5 /* LaunchScreen.storyboard in Resources */,
 				847EBE7229A3E4030061FAC5 /* Assets.xcassets in Resources */,
 				847EBEA529A3E78A0061FAC5 /* MainViewController.xib in Resources */,
+				847EBEE429A4F61D0061FAC5 /* DetailView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,12 +300,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847EBEE029A4F5450061FAC5 /* DetailViewController.swift in Sources */,
 				847EBE9B29A3E44B0061FAC5 /* MainPresenter.swift in Sources */,
 				847EBE6D29A3E4010061FAC5 /* MainViewController.swift in Sources */,
 				847EBE6929A3E4010061FAC5 /* AppDelegate.swift in Sources */,
-				847EBE9929A3E41F0061FAC5 /* Person.swift in Sources */,
+				847EBEDB29A4EEAE0061FAC5 /* DetailPresenter.swift in Sources */,
+				847EBE9929A3E41F0061FAC5 /* Comment.swift in Sources */,
 				847EBE6B29A3E4010061FAC5 /* SceneDelegate.swift in Sources */,
 				847EBEA729A3E82A0061FAC5 /* ModuleBuilder.swift in Sources */,
+				847EBED829A4E6FE0061FAC5 /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

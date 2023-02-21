@@ -9,13 +9,22 @@ import UIKit
 
 protocol Builder {
     static func createMainModule() -> UIViewController
+    static func createDetailModule(comment: Comment?) -> UIViewController
 }
 
 class ModelBuilder: Builder {
+    
     static func createMainModule() -> UIViewController {
-        let module = Person(firstName: "Tim", lastName: "Cook")
         let view = MainViewController()
-        let presenter = MainPresenter(view: view, person: module) // Инджектим снаружи по принципу SOLID и для того, чтобы мы потом смогли заинъектить во view и в person MOC-объект
+        let networkService = NetworkService()
+        let presenter = MainPresenter(view: view, networkService: networkService) // Инджектим снаружи по принципу SOLID и для того, чтобы мы потом смогли заинъектить во view и в person MOC-объект
+        view.presenter = presenter
+        return view
+    }
+    static func createDetailModule(comment: Comment?) -> UIViewController {
+        let view = DetailViewController()
+        let networkService = NetworkService()
+        let presenter = DetailPresenter(view: view, networkService: networkService, comment: comment)
         view.presenter = presenter
         return view
     }
