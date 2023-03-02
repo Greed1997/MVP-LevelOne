@@ -8,19 +8,41 @@
 import Foundation
 
 protocol MainViewPresenterProtocol: AnyObject {
-    init(view: MainViewProtocol, person: Person)
-    func showGreeting()
+    init(view: MainViewProtocol, networkService: NetworkServiceProtocol, router: RouterProtocol)
+    func getComments()
+    var comments: [Comment]? { get set }
+    func tapOnTheComment(comment: Comment?)
 }
 class MainPresenter: MainViewPresenterProtocol {
-    let view: MainViewProtocol
-    let person: Person
-    required init(view: MainViewProtocol, person: Person) {
+    
+    let networkService: NetworkServiceProtocol!
+    var comments: [Comment]?
+    var router: RouterProtocol? // don't need to be weak because it will fall anyway
+    weak var view: MainViewProtocol?
+    
+    required init(view: MainViewProtocol, networkService: NetworkServiceProtocol, router: RouterProtocol) {
         self.view = view
-        self.person = person
+        self.networkService = networkService
+        self.router = router
+        getComments()
+    }
+    func tapOnTheComment(comment: Comment?) {
+        router?.showDetail(comment: comment)
     }
     
-    func showGreeting() {
-        let greeting = self.person.firstName + " " + self.person.lastName
-        self.view.setGreeting(greeting: greeting)
+    func getComments() {
+        networkService.getComments { [weak self] result in
+            guard let self = self else { return }
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let comments):
+                    self.comments = comments
+                    self.view?.succes()
+                case .failure(let error):
+                    self.view?.failure(error: error)
+                }
+            }
+        }
     }
+
 }
