@@ -15,10 +15,9 @@ protocol MainViewPresenterProtocol: AnyObject {
 }
 class MainPresenter: MainViewPresenterProtocol {
     
-    
     let networkService: NetworkServiceProtocol!
     var comments: [Comment]?
-    var router: RouterProtocol?
+    var router: RouterProtocol? // don't need to be weak because it will fall anyway
     weak var view: MainViewProtocol?
     
     required init(view: MainViewProtocol, networkService: NetworkServiceProtocol, router: RouterProtocol) {

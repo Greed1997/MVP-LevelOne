@@ -1,5 +1,5 @@
 //
-//  RouterProtocol.swift
+//  Router.swift
 //  MVP-Level One
 //
 //  Created by Александр on 21.02.2023.
@@ -12,9 +12,9 @@ protocol RouterMain { // for all controllers
     var assemblyBuilder: AssemblyBuilderProtocol? { get set }
 }
 protocol RouterProtocol: RouterMain { // for router
-    func initalViewController()
+    func initalViewController() // startVC
     func showDetail(comment: Comment?)
-    func popToRoot() // позволяет к первоначальному viewcontroller-y
+    func popToRoot() // позволяет вернуться к первоначальному viewcontroller-y
 }
 class Router: RouterProtocol {
     var navigationController: UINavigationController?
@@ -43,7 +43,4 @@ class Router: RouterProtocol {
             navigationController.popToRootViewController(animated: true)
         }
     }
-    
-    
-    
 }

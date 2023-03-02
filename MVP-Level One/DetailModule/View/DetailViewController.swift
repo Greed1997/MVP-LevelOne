@@ -17,10 +17,15 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         presenter.setComment()
     }
+    
+    @IBAction func tapAction(_ sender: Any) {
+        presenter.tap() // 1) View say to Presenter that button did tapped; 2) Presenter do it method tap() {router.popToRoot()}; 3) Попка исполнит метод из Router и переведет пользователя на начальный экран
+    }
+    
 
 }
 extension DetailViewController: DetailViewProtocol {
     func setComment(comment: Comment?) {
-        self.commentLabel.text = comment?.body
+        commentLabel.text = comment?.body
     }
 }
